@@ -2,38 +2,38 @@
 let questions = [
   {
     id: 1,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
+    question: "What year did the Titanic sink in the Atlantic Ocean on 15 April, on its maiden voyage from Southampton?",
+    answer: "1912",
     options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
+      "1912",
+      "1913",
+      "1914",
+      "1915"
     ]
   },
   {
     id: 2,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
+    question: "What is the name of the biggest technology company in South Korea?",
+    answer: "Samsung",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
+      "MI",
+      "Samsung",
+      "Nokia",
       "None of these"
     ]
   },
   {
     id: 3,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
+    question: "What is the capital of Portugal?",
+    answer: "Lisbon",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
+      "Lisbon",
+      "Southampton",
+      "kerala",
       "None of these"
     ]
   },
-   {
+  {
     id: 4,
     question: "In which year was The Godfather first released?",
     answer: "1972",
@@ -68,7 +68,6 @@ window.onload = function() {
 function next() {
 
    
-  // if the question is last then redirect to final page
   if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
@@ -77,7 +76,6 @@ function next() {
   console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
-  // check if the answer is right or wrong
   if (user_answer == questions[question_count].answer) {
     points += 10;
     sessionStorage.setItem("points", points);

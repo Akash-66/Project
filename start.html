@@ -12,7 +12,13 @@
     <div class="wrapper">
         <div class="welcome_text">
             <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
-                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="name" placeholder="Your Name"><br><br>
+                 <label>Choose a Dificulty Level:</label>
+                  <select id="level" name="level1">
+                    <option value="quiz" name="done">Easy</option>
+                    <option value="quizM" name="done">Medium</option>
+                    <option value="quizH" name="done">Hard</option>
+                  </select><br><br>
                 <button>Start Quiz</button>
             </form>
         </div>
